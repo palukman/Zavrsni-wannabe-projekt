@@ -1,0 +1,312 @@
+body {
+	filter: opacity 0.3;
+	color: white;
+	font-size: 16pt;
+}
+
+.header {
+	height: 550px;
+	background:  no-repeat;
+	background-size: cover;
+	
+}
+.header a {
+	font-size: 24pt;
+	color: #fff;
+	margin: 50px 0 0 50px;
+	display: block;
+	font-family: 'Risque';
+	text-decoration: underline;
+}
+
+.header a:hover{
+	text-decoration:none;
+	
+}
+
+.fb_like {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,0)
+}
+
+.header p {
+	font-size: 32pt;
+	color: #fff;
+	margin-top: 150px;
+	text-align: center;
+	font-family: 'Risque';
+}
+
+.main-menu {
+	width: 100%;
+	background-color: #056000;
+	
+}
+
+.main-menu li {
+	display: inline-block;
+	padding: 0 50px;
+	margin-left: 30px;
+	font-family: 'Risque';
+}
+
+.main-menu li a {
+	color: white;
+	font-size: 24pt;
+	line-height: 100px;
+	display: block;
+}
+
+.main-menu li:hover {
+	background-color: #011e00;
+	transition: .5s;
+}
+.main-menu li:hover a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.hamburger {
+	display: none;
+	height: 100px;
+	background-color: #272a30; 
+	text-align: right;
+	padding-right:50px;
+}
+
+@media screen and (max-width:760px) {
+	.main-menu {
+		padding: 0;
+		display: none;
+	}
+	.main-menu li {
+		display: block;
+		text-align: center;
+	}
+	.hamburger {
+		display: block;
+	}
+}
+
+@media screen and (min-width:761px) {
+	.main-menu {
+		display: block!important;
+	}
+}
+
+
+.gallery img {
+	width: 100%;	
+}
+.gallery div {
+	padding: 5px;
+}
+.gallery p {
+	font-size: 21pt;
+	color: black;
+	margin-top: 10px;
+	text-align: left;
+	font-family: 'Lobster Two', cursive;
+}
+
+.overlay {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.image-container:hover .overlay {
+	opacity: 0.7;
+}
+
+.image-container:hover img {
+	filter: blur(3px);
+}
+.overlay p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 18pt;
+}
+.overlay p a {
+	color: white;
+	text-decoration: none;
+}
+
+
+.contact-form {	
+	background-color: #056000;
+	padding: 100px;
+}
+.contact-form h1 {
+	color:white;
+	font-size: 24pt;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.form-control {
+	height: 40px;
+	border-radius: 30;
+	border: 1px solid white;
+}
+.form-control::placeholder {
+	color: #000;
+}
+.btn, .btn:hover {
+	padding: 15px 25px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 40;
+}
+.btn-default {
+	border: 0;
+}
+
+
+.footer {
+	height:350px;
+	background: url('img/Rectangle.png') no-repeat;
+	background-size: cover;
+
+}
+.footer img {
+	margin: 100px 0 0 100px;
+}	
+
+.footer ul {
+	margin-top: 100px;
+	float: right;
+}
+.footer ul li {
+	display: inline-block;
+}
+.footer ul li a {
+	color: black;
+	font-size: 18pt;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: block;
+	text-decoration: none;
+}
+
+@media screen and (max-width:760px) { 
+	.footer img {
+		width: 50%;
+		margin: 80px auto 0 auto;
+		display: block;
+	}
+	.footer ul {
+		margin: 80px 0 0 0;
+		text-align: center;
+		float: none;
+	}
+	.footer ul li {
+		display: block;
+	}
+}
+
+
+.square-blocks div {
+	height: 250px;	
+}
+.square-blocks .light-grey-bg {
+	background-color: #c1ffbf;
+}
+.square-blocks .dark-grey-bg {
+	background-color: white;
+}
+.square-blocks p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 18pt;
+	text-transform: uppercase;
+	color: black;
+}
+
+.square-blocks a {
+	color: black;
+}
+
+.square-blocks a:hover {
+	color: #039100;
+	text-decoration: none;
+}
+
+.section {
+	margin: 50px 0;
+	font-style: bold;
+}
+
+.section h1 {
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+}
+.square-blocks p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18pt;
+}
+.about-me img,
+.article img {
+	width: 100%;
+}
+.about-me div,
+.article div {
+	padding: 0;
+}
+.about-me-text,
+.article-text {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+.section-title {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.square-blocks span {
+	font-size: 52pt;
+	
+}
+
+.about-me-image {
+	padding-left: 0px;
+}
+
+@media screen and (max-width:500px){
+.about-me-text {
+	font-size: 10pt;
+	width: 100%;
+	text-align: center;
+}
+.about-me img {
+	width: 100%;
+
+}
+}
+
+
+#vegas {
+	height: 500px;
+}
